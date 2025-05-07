@@ -1,0 +1,191 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+	font-family: "Roboto", sans-serif;
+	padding:0;
+	margin:0;
+	min-height:100vh;
+	display:flex;
+	flex-direction:column;
+	background-color:#0057bb;
+	background-image:url("../images/bg.jpeg");
+	background-size:cover; 
+	color:white;
+}
+
+header,footer{
+	padding:0 2.5%;
+}
+
+
+header{
+	background-color:#0d0d22;
+	min-height:10vh;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+header img{
+	width:60px;
+	height:auto;
+}
+
+header nav a{
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:1.1rem;
+	padding:1rem;
+	transition:0.25s;
+}
+
+header nav a:hover{
+	background-color:#f50034;
+	border-radius:10px;
+}
+
+header a{
+	color:white;
+	text-decoration:none;
+}
+
+header > a:first-child{
+    display: flex;
+    align-items: center;
+}
+
+main{
+	min-height:70vh;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+footer{
+	background-color:black;
+	min-height:20vh;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	color:white;
+}
+
+footer a{
+	color:white;
+	text-decoration:none;
+}
+
+footer ul{
+	list-style:none;
+	padding-left:0;
+}
+
+section{
+	max-width:1280px;
+	padding:2.5%
+}
+/* CLASSES GENERALES */
+
+.text-center{
+	text-align:center;
+}
+
+.text-left{
+	text-align:left;
+}
+
+.text-right{
+	text-align:right;
+}
+
+h1, h2{
+	color:white;
+}
+
+h1{
+	font-size:3rem;
+}
+
+.bouton-rouge{
+	background-color:#f50034;
+	border-radius:10px;
+	font-size:1.1rem;
+	padding:1rem;
+	color:white;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.container-bouton{
+  display: flex;
+  justify-content: space-around;
+  margin-top:3rem;
+}
+
+.img-section{
+	height:100px;
+	width:100%;
+	object-fit:cover;
+	filter: grayscale(1);
+}
+
+.nav-active{
+	background-color:#f50034;
+	border-radius:10px;
+}
+
+.card-services{
+background-color:white;
+border-radius:10px;
+color:black;
+padding:2.5%;
+margin:2.5%;	
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+max-width:450px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+}
+
+.card-services h2,.card-services i{
+	color:#0057bb;
+}
+
+.card-services p{
+	font-size:0.8rem;
+}
+
+.card-services ul{
+	/* changer icone liste à puce */
+	list-style-type: "✔";
+}
+
+.card-services li::marker{
+	color:forestgreen;
+}
+
+.container-card-services{
+	display:flex;
+}
+
+
+/* FORM */
+
+form{
+	display:flex;
+	flex-direction:column;
+	gap:1rem;
+}
+
+form input, form textarea{
+	padding:2.5%;
+	border-radius:10px;
+	font-family: "Roboto", sans-serif;
+	font-size:1rem;
+	border:none;
+	cursor:pointer;
+}
